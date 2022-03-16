@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo HTML</title>
+    <script>
+        let a = "carro";
+        var b = 1;
+        const c = "casa";
+
+        function ClickNoBotao() {
+            alert("'S up!");
+        }
+
+        function atualizacaoTexto(){
+            let input = document.getElementById("input1")
+            let p = document.getElementById("paragrafo1")
+
+            p.textContent = input.value;
+
+            console.log("oi")
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1> Título 1: h1 </h1>
+        <h2> Título 2: h2 </h2>
+        <p id="paragrafo1"> Paragrafos: p </p>
+        <span> Informação isolada: span</span>
+        <img src="Imagem.png" alt="">
+        <a href="https://www.google.com.br"> Link para o Chrome </a>
+    </div>
+    <div>        
+        <input type="text" name="Tell us what" id="input1" oninput="atualizacaoTexto()">
+        <select name="Select" id="2">
+            <option value="Escolher"> Opção 1 </option>
+            <option>Opção 2 </option>
+            <option> Opção 3 </option>
+        </select>
+        <button onclick="ClickNoBotao()"> Next </button>
+    </div>
+</body>
+</html>
