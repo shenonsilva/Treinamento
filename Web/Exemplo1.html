@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
             alert("'S up!");
         }
 
-        function atualizacaoTexto(){
+        function atualizacaoTexto() {
             let input = document.getElementById("input1")
             let p = document.getElementById("paragrafo1")
 
@@ -23,24 +24,71 @@
             console.log("oi")
         }
     </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #bbb;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: grey;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            max-width: 95%;
+            border: solid 2px black;
+            padding: 2px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .margem-minima {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .margem-minima input, 
+        .margem-minima select, 
+        .margem-minima button {
+            width: 50vw;
+        }
+    </style>
 </head>
+
 <body>
     <div>
         <h1> Título 1: h1 </h1>
         <h2> Título 2: h2 </h2>
         <p id="paragrafo1"> Paragrafos: p </p>
         <span> Informação isolada: span</span>
-        <img src="Imagem.png" alt="">
+        </div>
+    <div class="margem-minima">
+        <img src="Imagem.png" />
+    </div>
+    <div class="margem-minima">
         <a href="https://www.google.com.br"> Link para o Chrome </a>
     </div>
-    <div>        
+    <div class="margem-minima">
         <input type="text" name="Tell us what" id="input1" oninput="atualizacaoTexto()">
+    </div>
+    <div class="margem-minima">
         <select name="Select" id="2">
             <option value="Escolher"> Opção 1 </option>
             <option>Opção 2 </option>
             <option> Opção 3 </option>
         </select>
+    </div>
+    <div class="margem-minima">
         <button onclick="ClickNoBotao()"> Next </button>
     </div>
 </body>
+
 </html>
